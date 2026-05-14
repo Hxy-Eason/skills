@@ -290,7 +290,10 @@ try {
 
   $localBranchAfterMerge = & git -C $RepoPath branch --list $branchName
   if ($localBranchAfterMerge) {
-    Run-Git branch -D $branchName
+    & git -C $RepoPath branch -D $branchName
+    if ($LASTEXITCODE -ne 0) {
+      throw "git branch -D $branchName failed"
+    }
   }
 
   $finalStatus = & git -C $RepoPath status --porcelain
