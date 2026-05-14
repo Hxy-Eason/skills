@@ -1,0 +1,7 @@
+interface:
+  display_name: "CJK Encoding Guard"
+  short_description: "Detect CJK mojibake and risky Windows text writes"
+  brand_color: "#10B981"
+  default_prompt: "Use $cjk-encoding-guard to scan this project for Chinese/CJK encoding pollution before editing text-heavy files."
+policy:
+  allow_implicit_invocation: true
