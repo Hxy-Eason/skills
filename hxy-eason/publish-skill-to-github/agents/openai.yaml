@@ -1,0 +1,4 @@
+interface:
+  display_name: "发布 Skill 到 GitHub"
+  short_description: "校验并发布本地 Codex skill 到 GitHub 仓库"
+  default_prompt: "发布一个本地 Codex skill 到 Hxy-Eason/skills 仓库"
